@@ -1,155 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service – Focus Nest</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Focus Nest</title>
+    <style>
+        :root {
+            --zinc-900: #18181b;
+            --zinc-800: #27272a;
+            --zinc-500: #71717a;
+            --zinc-400: #a1a1aa;
+            --zinc-100: #f4f4f5;
+            --red-600: #dc2626;
+            --red-50: #fef2f2;
+        }
 
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65;
-    color: #18181b;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: #ffffff;
-}
-h1 {
-    font-size: 26px;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    border-bottom: 1px solid #f4f4f5;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-}
-h2 {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
-p, li {
-    font-size: 14px;
-    color: #27272a;
-    margin-bottom: 12px;
-}
-ul { padding-left: 20px; }
-.alert {
-    border-left: 5px solid #dc2626;
-    background: #fef2f2;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 30px 0;
-}
-footer {
-    margin-top: 80px;
-    padding-top: 40px;
-    border-top: 1px solid #f4f4f5;
-    font-size: 11px;
-    color: #a1a1aa;
-    text-align: center;
-}
-a { color: #18181b; text-decoration: underline; }
-</style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--zinc-800);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 48px 24px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--zinc-900);
+            border-bottom: 1px solid var(--zinc-100);
+            padding-bottom: 24px;
+            margin-bottom: 40px;
+        }
+
+        h1 span {
+            color: var(--zinc-400);
+        }
+
+        .last-updated {
+            font-size: 10px;
+            color: var(--zinc-400);
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin-bottom: 48px;
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--zinc-900);
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .warning-box {
+            border: 1px solid #fee2e2;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: var(--red-50);
+        }
+
+        .warning-box h2 {
+            color: var(--red-600);
+        }
+
+        .warning-text {
+            color: var(--red-600);
+            font-weight: 500;
+        }
+
+        a {
+            color: var(--zinc-900);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        footer {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid var(--zinc-100);
+            text-align: center;
+        }
+
+        .footer-link {
+            font-size: 10px;
+            color: var(--zinc-400);
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            line-height: 2;
+        }
+
+        .footer-link a {
+            color: var(--zinc-500);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 32px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Terms of Service <span>Focus Nest</span></h1>
+        
+        <div class="last-updated">Last Updated: April 12, 2026</div>
 
-<h1>Terms of Service – Focus Nest</h1>
-<p><strong>Last Updated:</strong> March 27, 2026</p>
+        <section>
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using the Focus Nest application (“App”), you agree to this Terms of Service and commit to following it. If you do not agree, you must immediately delete the App and stop using it.</p>
+            <p><strong>Age Requirement:</strong> The App is intended for users aged 13 or older. Minors must use the App with parental consent.</p>
+            <p><strong>Export Compliance:</strong> You represent that you are not located in a country under a U.S. Government embargo and that you are not listed on any prohibited or restricted party lists.</p>
+        </section>
 
-<h2>1. Definitions and Parties</h2>
-<p>This Terms of Service ("Agreement") is a legally binding agreement between:</p>
-<ul>
-<li><strong>Creator:</strong> Independent developer of Focus Nest, contact: app.focusnest@gmail.com</li>
-<li><strong>User:</strong> Any individual who downloads, installs, or uses the Focus Nest mobile application (“App”).</li>
-</ul>
+        <section>
+            <h2>2. Service Provided "As-Is"</h2>
+            <p>The App is provided on an “AS IS” and “AS AVAILABLE” basis. The Creator makes no warranties regarding effectiveness, uninterrupted operation, or absence of errors. Focus is subjective; the App is a supportive tool only.</p>
+            <p>The App uses <strong>Android Foreground Services</strong> and <strong>Exact Alarms</strong>. Users are responsible for excluding Focus Nest from strict battery optimization for optimal performance.</p>
+            <p><strong>Health Disclaimer:</strong> The App does not replace professional medical advice or therapy. Users use it at their own risk.</p>
+        </section>
 
-<h2>2. Acceptance of Terms</h2>
-<p>By downloading or using the App distributed via <strong>Google Play</strong>, you agree to be bound by these Terms. If you do not agree, you must immediately uninstall the App.</p>
+        <section>
+            <h2>3. License and Intellectual Property</h2>
+            <p>All intellectual property rights remain with the Creator. Users are granted a limited, non-exclusive, non-transferable, revocable license for personal, non-commercial use only.</p>
+            <p>Prohibited: copying, modifying, distributing the App, reverse engineering, creating derivative works, or commercial use without permission. “Elite” license grants premium features only during active maintenance of the App in Google Play.</p>
+        </section>
 
-<h2>3. Export Compliance</h2>
-<p>You represent that you are not located in a country subject to U.S. embargo and are not on any U.S. government restricted list.</p>
+        <section>
+            <h2>4. Prohibited Use</h2>
+            <p>You may not violate this Terms, bypass security or payment systems, use the App unlawfully, or distribute malware or spam through the App.</p>
+        </section>
 
-<h2>4. Service Provided “AS IS” and “AS AVAILABLE”</h2>
-<p>The App is provided without warranties of any kind. The Creator disclaims all express or implied warranties including merchantability, fitness for a particular purpose, and non-infringement.</p>
-<p>The App utilizes <strong>Android Foreground Services</strong> and <strong>Exact Alarms</strong>. Proper operation may require disabling battery optimization.</p>
+        <section class="warning-box">
+            <h2>5. Health and Safety Disclaimer</h2>
+            <p class="warning-text"><strong>WARNING:</strong> The App contains visual effects and animations. Users with epilepsy, seizures, or light sensitivity should consult a medical professional before use.</p>
+            <p class="warning-text"><strong>ROAD SAFETY:</strong> Do not use the App while driving, operating machinery, or in situations requiring full attention. Users are responsible for their own safety.</p>
+        </section>
 
-<h2>5. License Grant</h2>
-<p>You are granted a limited, non-exclusive, non-transferable, revocable license for personal, non-commercial use only.</p>
+        <section>
+            <h2>6. Payments and "Elite" License</h2>
+            <p>Purchases are made via Google Play as a <strong>one-time purchase</strong>. The “Elite” license provides access to premium features during active maintenance of the App. Compatibility with future OS versions is not guaranteed.</p>
+            <p><strong>License Restoration:</strong> Reinstalling the App or changing devices allows restoring the "Elite" purchase via the "Restore Purchases" button using the same Google Play account.</p>
+            <p><strong>Pricing:</strong> The Creator may modify the price anytime. Price changes do not affect existing purchasers. Temporary promotions do not entitle users to refunds of previous purchases.</p>
+        </section>
 
-<h2>6. Prohibited Conduct</h2>
-<ul>
-<li>Reverse engineering, decompiling, modifying or distributing the App</li>
-<li>Bypassing license validation systems</li>
-<li>Using the App to train AI systems</li>
-<li>Automated scraping or data extraction</li>
-<li>Any unlawful activity</li>
-</ul>
+        <section>
+            <h2>7. EU Right of Withdrawal</h2>
+            <p>By purchasing digital content, you consent to immediate provision. EU consumers lose the right of withdrawal once the service is delivered. Refunds are subject to Google Play policies.</p>
+        </section>
 
-<div class="alert">
-<h2>7. Health & Safety Warning</h2>
-<p>The App includes visual animations. If you have epilepsy or light sensitivity, consult a physician before use. Do not use while driving or operating machinery.</p>
-</div>
+        <section>
+            <h2>8. Service Availability and Battery</h2>
+            <p>Access to premium features may be temporarily unavailable due to maintenance, Google Play interruptions, or other factors outside the Creator's control.</p>
+            <p><strong>Third-Party Dependencies:</strong> The App relies on Google Play Services. The Creator is not liable for failures, downtime, or errors caused by Google.</p>
+            <p><strong>Battery Usage:</strong> Foreground Services and keeping the screen on during sessions may increase battery consumption. The Creator is not responsible for battery degradation or unexpected power loss.</p>
+        </section>
 
-<h2>8. Advertising and Third-Party Services</h2>
-<p>The App may display advertisements served by Google AdMob. Advertising partners may collect device identifiers and usage data in accordance with their privacy policies.</p>
-<p>Users in the European Economic Area will be presented with a consent form where required by law.</p>
+        <section>
+            <h2>9. App Updates and Compatibility</h2>
+            <p>The Creator may update the App, modify features, or discontinue support for older OS versions or devices. Continued use may require downloading updates.</p>
+        </section>
 
-<h2>9. In-App Purchases</h2>
-<p>Purchases are processed via Google Play Billing. The App may use RevenueCat SDK to validate purchases.</p>
-<p>The “Elite” license remains valid while the App is commercially available and technically supported.</p>
+        <section>
+            <h2>10. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, the Creator’s liability is limited to the amount paid for the “Elite” upgrade. The Creator is not liable for indirect damages, data loss, profits, device damage, or missed deadlines. This does not limit statutory consumer rights in the EU or Poland.</p>
+        </section>
 
-<h2>10. Subscription Terms (If Applicable)</h2>
-<p>If subscription products are introduced, they will auto-renew unless canceled via your Google Play account settings.</p>
+        <section>
+            <h2>11. Force Majeure</h2>
+            <p>The Creator is not responsible for events beyond control, including Google Play failures, internet outages, or changes in Android policy.</p>
+        </section>
 
-<h2>11. Refund Policy</h2>
-<p>Refunds are handled exclusively by Google Play in accordance with their policies.</p>
+        <section>
+            <h2>12. Reporting Illegal Content</h2>
+            <p>Report illegal or harmful content to <strong>app.focusnest@gmail.com</strong>. Provide details such as screenshots or links. Reports will be reviewed promptly.</p>
+        </section>
 
-<h2>12. Limitation of Liability</h2>
-<p>To the maximum extent permitted by law, the Creator shall not be liable for indirect, incidental, or consequential damages including loss of data or profits.</p>
-<p>Total liability shall not exceed the amount paid by the User for the Elite upgrade, or 0 EUR if no purchase was made.</p>
+        <section>
+            <h2>13. AI & Web Scraping Prohibition</h2>
+            <p>Using the App or its content to train AI models or extract data using bots or scripts is strictly prohibited. Violations may result in suspension or termination of the license.</p>
+        </section>
 
-<h2>13. Force Majeure</h2>
-<p>The Creator is not liable for failures caused by events beyond reasonable control including platform outages or cyberattacks.</p>
+        <section>
+            <h2>14. Accessibility Statement</h2>
+            <p>The App strives to comply with the European Accessibility Act. Users encountering barriers should contact us.</p>
+        </section>
 
-<h2>14. Termination</h2>
-<p>Access may be suspended or terminated for violations of these Terms.</p>
+        <section>
+            <h2>15. Termination</h2>
+            <p>The Creator may suspend or terminate access for violations of this Terms. Users may stop using the App anytime by uninstalling it.</p>
+        </section>
 
-<h2>15. Privacy</h2>
-<p>Your use of the App is also governed by the Privacy Policy available at: https://appfocusnest.github.io/privacy/</p>
+        <section>
+            <h2>16. Changes to Terms</h2>
+            <p>The Creator may update these Terms at any time. Continued use constitutes acceptance of changes.</p>
+        </section>
 
-<h2>16. Children’s Policy</h2>
-<p>The App is not directed to children under 13 (or higher age where required by law).</p>
+        <section>
+            <h2>17. Severability</h2>
+            <p>If any provision is invalid, remaining provisions remain in effect.</p>
+        </section>
 
-<h2>17. Governing Law</h2>
-<p>These Terms are governed by the laws of Poland. EU consumers benefit from mandatory local protections.</p>
+        <section>
+            <h2>18. Governing Law</h2>
+            <p>These Terms are governed by Polish law. Disputes are resolved in courts competent for the Creator’s seat, respecting consumer protection laws.</p>
+        </section>
 
-<h2>18. Digital Services Act (EU)</h2>
-<p>Illegal content may be reported to: app.focusnest@gmail.com</p>
+        <section>
+            <h2>19. Consumer Dispute Resolution (ODR)</h2>
+            <p>EU consumers may use the Online Dispute Resolution platform: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.</p>
+        </section>
 
-<h2>19. Online Dispute Resolution</h2>
-<p>EU consumers may use the ODR platform: https://ec.europa.eu/consumers/odr</p>
+        <section>
+            <h2>20. Data Safety Commitment</h2>
+            <p>The Creator follows Google Play Data Safety standards. No user data is sold to third parties. Data collection is limited to the App’s core functionality.</p>
+        </section>
 
-<h2>20. Severability</h2>
-<p>If any provision is deemed invalid, remaining provisions remain in force.</p>
+        <section>
+            <h2>21. Contact</h2>
+            <p>Email: <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
+        </section>
 
-<h2>21. Entire Agreement</h2>
-<p>These Terms constitute the entire agreement between User and Creator.</p>
-
-<h2>22. Changes to Terms</h2>
-<p>Terms may be updated at any time. Continued use constitutes acceptance.</p>
-
-<h2>23. Contact</h2>
-<p>Email: app.focusnest@gmail.com</p>
-
-<footer>
-Latest version available at:<br>
-appfocusnest.github.io/termsofservice/
-</footer>
-
+        <footer>
+            <div class="footer-link">
+                Latest version available online at:<br />
+                <a href="https://appfocusnest.github.io/termsofservice/" target="_blank">appfocusnest.github.io/termsofservice/</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
