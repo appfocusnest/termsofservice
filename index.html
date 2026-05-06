@@ -1,168 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service - Focus Nest</title>
-<style>
-:root {
-    --zinc-100:#f4f4f5;
-    --zinc-400:#a1a1aa;
-    --zinc-800:#27272a;
-    --zinc-900:#18181b;
-    --red-50:#fef2f2;
-    --red-600:#dc2626;
+tsx
+export default function Terms() {
+  return (
+    <div className="min-h-screen bg-white text-black px-6 py-12 max-w-2xl mx-auto selection:bg-zinc-200">
+      <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-zinc-900 mb-10 border-b border-zinc-100 pb-6">
+        Terms of Service <span className="text-zinc-400">Focus Nest</span>
+      </h1>
+      <TermsContent />
+    </div>
+  );
 }
-body {
-    font-family: -apple-system, system-ui, sans-serif;
-    line-height: 1.7;
-    color: var(--zinc-800);
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 60px 25px;
-    background: #fff;
+
+export function TermsContent() {
+  return (
+    <div className="space-y-8 text-sm leading-relaxed text-justify font-normal text-zinc-800 bg-white">
+      <p className="text-[10px] text-zinc-400 uppercase tracking-[0.3em] mb-12">Last Updated: May 07, 2026</p>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">1. Service Provider</h2>
+        <p>
+          These Terms are entered into with <strong>Joanna Maleszka</strong>, independent developer based in <strong>Poland</strong> (“Creator”).
+        </p>
+        <p>Contact: <a href="mailto:app.focusnest@gmail.com" className="text-zinc-900 hover:text-black transition-colors underline underline-offset-4 font-medium">app.focusnest@gmail.com</a></p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">2. Acceptance of Terms</h2>
+        <p>
+          By using the App, you agree to these Terms. The App is intended for users aged 13+ (16 in some EU regions). If you do not agree, you must uninstall the App.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">3. Description of Service</h2>
+        <p>
+          Focus Nest is a productivity application designed to support focus management and time tracking. It does not guarantee productivity results or outcomes.
+        </p>
+        <p>
+          The App may display advertisements. Some features require a one-time purchase (“Elite”) via Google Play Billing.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">4. License</h2>
+        <p>
+          You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal use only.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>You may not reverse engineer, modify, or decompile the App</li>
+          <li>You may not redistribute or resell the App</li>
+          <li>You may not use the App to train AI models</li>
+        </ul>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">5. Payments and Premium Features</h2>
+        <div className="space-y-3">
+          <p>
+            All purchases are processed by Google Play Billing and are subject to Google Play policies.
+          </p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li><strong>EU Withdrawal:</strong> You agree to immediate digital service delivery and waive withdrawal rights once activation begins.</li>
+            <li><strong>Refunds:</strong> Managed exclusively by Google Play.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">6. Third-Party Services</h2>
+        <p>
+          The App uses third-party services which operate under their own privacy policies:
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Google AdMob</li>
+          <li>RevenueCat</li>
+        </ul>
+        <p>
+          These services may independently collect and process data.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">7. Service Availability</h2>
+        <p>
+          The App is provided “AS IS”. We are not responsible for interruptions caused by: device restrictions, OS updates, or external service failures.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">8. User Responsibility</h2>
+        <p>
+          Users are responsible for correct device configuration (battery optimization, notifications). The App must not be used while driving or operating machinery.
+        </p>
+      </section>
+
+      <section className="space-y-3 border border-red-100 p-4 rounded-lg bg-red-50/30">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-red-600">9. Health & Safety (Seizure Warning)</h2>
+        <div className="text-red-600 space-y-2">
+          <p>
+            A very small percentage of individuals may experience epileptic seizures when exposed to certain visual patterns, including flashing lights or animations. Even people who have no history of seizures or epilepsy may have an undiagnosed condition.
+          </p>
+          <p>
+            <strong>Consult your physician before use</strong> if you have an epileptic condition or have experienced any symptoms related to seizures.
+          </p>
+          <p>
+            <strong>Immediately discontinue use</strong> and consult a doctor if you experience: dizziness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or any involuntary movement.
+          </p>
+          <p className="text-[11px] font-bold">
+            The Creator is not liable for any health complications arising from the use of the App's visual interface.
+          </p>
+        </div>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">10. Limitation of Liability</h2>
+        <div className="space-y-3">
+          <p>
+            To the maximum extent permitted by law, the Creator is not liable for indirect damages, data loss, or device issues.
+          </p>
+          <p>
+            Where liability cannot be excluded, it is limited to the amount paid for premium features.
+          </p>
+        </div>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">11. Indemnification</h2>
+        <p>
+          You agree to indemnify the Creator against claims arising from misuse of the App.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">12. Termination</h2>
+        <p>
+          We may suspend or discontinue the App at any time in compliance with applicable law. You may stop using it at any time by uninstalling.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">13. Export Compliance</h2>
+        <p>
+          You confirm that you are not located in a country subject to embargo or sanctions, and are not on any restricted party list.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">14. Governing Law</h2>
+        <p>
+          These Terms are governed by <strong>Polish law</strong>. EU consumers retain mandatory legal protections in their country of residence.
+        </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">15. Contact</h2>
+        <p>Email: <a href="mailto:app.focusnest@gmail.com" className="text-zinc-900 hover:text-black transition-colors underline underline-offset-4 font-medium">app.focusnest@gmail.com</a></p>
+      </section>
+
+      <div className="pt-12 border-t border-zinc-100 mt-16 pb-10">
+        <p className="text-[10px] text-zinc-400 uppercase tracking-[0.4em] text-center leading-loose">
+          Latest version available online at:<br />
+          <a href="https://appfocusnest.github.io/termsofservice/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-zinc-900 transition-colors break-all">appfocusnest.github.io/termsofservice/</a>
+        </p>
+      </div>
+    </div>
+  );
 }
-h1 {
-    font-weight: 300;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--zinc-100);
-    padding-bottom: 25px;
-    margin-bottom: 40px;
-}
-h2 {
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-top: 45px;
-    border-left: 3px solid var(--zinc-900);
-    padding-left: 15px;
-}
-p, li {
-    font-size: 0.95rem;
-    margin-bottom: 12px;
-    text-align: justify;
-}
-.date {
-    font-size: 0.75rem;
-    color: var(--zinc-400);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-bottom: 50px;
-}
-ul { padding-left: 20px; }
-footer {
-    margin-top: 80px;
-    padding-top: 30px;
-    border-top: 1px solid var(--zinc-100);
-    text-align: center;
-    font-size: 0.75rem;
-    color: var(--zinc-400);
-    text-transform: uppercase;
-}
-.disclaimer {
-    background: var(--red-50);
-    border: 1px solid #fee2e2;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-.disclaimer h2 {
-    color: var(--red-600);
-    border-left-color: var(--red-600);
-    margin-top: 0;
-}
-a { color: var(--zinc-900); }
-</style>
-</head>
-<body>
-
-<h1>Terms of Service <span style="color:var(--zinc-400)">Focus Nest</span></h1>
-<p class="date">Last Updated: April 19, 2026</p>
-
-<section>
-<h2>1. Service Provider</h2>
-<p>Joanna Maleszka, independent developer based in Poland (“Creator”). These Terms apply to all users of the Focus Nest application (“App”).</p>
-<p>Contact: <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
-</section>
-
-<section>
-<h2>2. Acceptance of Terms</h2>
-<p>By using the App you agree to these Terms. The App is intended for users aged 13+ (16 in some EU regions). Minors require parental or legal guardian consent.</p>
-<p><strong>Export Compliance:</strong> You confirm that (i) you are not located in a country subject to a U.S. or EU embargo; and (ii) you are not on any government list of prohibited parties.</p>
-</section>
-
-<section>
-<h2>3. Description of Service</h2>
-<p>The App is a productivity tool designed for focus management. It does not guarantee specific results. Some features require a one-time “Elite” purchase.</p>
-</section>
-
-<section>
-<h2>4. License</h2>
-<p>You receive a limited, non-transferable, revocable license for personal, non-commercial use only. You may not reverse engineer, modify, or resell the App. Use of the App to train AI models is strictly prohibited.</p>
-</section>
-
-<section>
-<h2>5. Payments and Premium Features</h2>
-<p>All purchases are processed via <strong>Google Play Billing</strong> and are subject to <strong>Google Play Terms of Service</strong>.</p>
-<p><strong>EU Notice:</strong> EU consumers expressly consent to immediate performance of digital content not supplied on a tangible medium and acknowledge that they lose the right of withdrawal once activation begins (EU Directive 2011/83/EU).</p>
-</section>
-
-<section>
-<h2>6. Third-Party Services</h2>
-<p>The App integrates third-party services (Google AdMob, RevenueCat) which act as independent controllers or processors under their own privacy policies. These services may collect and process user-related data independently. The Creator is not responsible for their data processing practices or content.</p>
-</section>
-
-<section>
-<h2>7. Service Availability</h2>
-<p>The App is provided “AS IS”. We are not responsible for interruptions caused by device hardware restrictions, operating system updates, or third-party service failures.</p>
-</section>
-
-<section>
-<h2>8. User Responsibility</h2>
-<p>You are responsible for correct device configuration (battery optimization, notifications). <strong>The App must not be used while driving or operating machinery.</strong></p>
-</section>
-
-<div class="disclaimer">
-<h2>9. Health & Safety</h2>
-<p>The App includes animations and visual effects. Users with photosensitive epilepsy or similar conditions should exercise caution and consult a medical professional before use.</p>
-</div>
-
-<section>
-<h2>10. Limitation of Liability</h2>
-<p>To the maximum extent permitted by law, the Creator is not liable for indirect damages, data loss, or device-related issues. Liability is limited to the amount paid for premium features. <strong>Nothing in these Terms excludes or limits any liability that cannot be excluded under applicable law.</strong></p>
-</section>
-
-<section>
-<h2>11. Indemnification</h2>
-<p>You agree to indemnify the Creator against any claims resulting from your misuse of the App or violation of these Terms.</p>
-</section>
-
-<section>
-<h2>12. Termination</h2>
-<p>We may suspend or discontinue the App at any time. You may terminate your agreement with these Terms at any time by uninstalling the App.</p>
-</section>
-
-<section>
-<h2>13. Accessibility</h2>
-<p>We aim to support accessibility under European standards (Directive 2019/882). Contact us if you encounter barriers.</p>
-</section>
-
-<section>
-<h2>14. Governing Law</h2>
-<p>Polish law governs these Terms. Any disputes shall be subject to the jurisdiction of the competent courts in Poland. EU consumers retain mandatory rights under the laws of their country of residence.</p>
-<p>EU ODR: <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a></p>
-</section>
-
-<section>
-<h2>15. Contact</h2>
-<p>For legal inquiries or support: <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
-</section>
-
-<footer>
-https://appfocusnest.github.io/termsofservice/
-</footer>
-
-</body>
-</html>
