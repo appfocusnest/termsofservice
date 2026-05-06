@@ -1,167 +1,243 @@
-tsx
-export default function Terms() {
-  return (
-    <div className="min-h-screen bg-white text-black px-6 py-12 max-w-2xl mx-auto selection:bg-zinc-200">
-      <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-zinc-900 mb-10 border-b border-zinc-100 pb-6">
-        Terms of Service <span className="text-zinc-400">Focus Nest</span>
-      </h1>
-      <TermsContent />
-    </div>
-  );
-}
+<!DOCTYPE html>
+<html lang="pl">
+<head>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Focus Nest</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-weight: 300;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            font-size: 24px;
+        }
+        h1 span {
+            color: #a0a0a0;
+        }
+        h2 {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 14px;
+        }
+        .last-updated {
+            font-size: 10px;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin-bottom: 50px;
+        }
+        section {
+            margin-bottom: 35px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .warning-box {
+            border: 1px solid #fee2e2;
+            background-color: rgba(254, 242, 242, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            color: #dc2626;
+        }
+        .warning-box h2 {
+            color: #dc2626;
+            margin-top: 0;
+        }
+        .warning-box p {
+            color: #dc2626;
+        }
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #f0f0f0;
+            text-align: center;
+        }
+        .footer p {
+            font-size: 10px;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 
-export function TermsContent() {
-  return (
-    <div className="space-y-8 text-sm leading-relaxed text-justify font-normal text-zinc-800 bg-white">
-      <p className="text-[10px] text-zinc-400 uppercase tracking-[0.3em] mb-12">Last Updated: May 07, 2026</p>
+    <h1>Terms of Service <span>Focus Nest</span></h1>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">1. Service Provider</h2>
-        <p>
-          These Terms are entered into with <strong>Joanna Maleszka</strong>, independent developer based in <strong>Poland</strong> (“Creator”).
-        </p>
-        <p>Contact: <a href="mailto:app.focusnest@gmail.com" className="text-zinc-900 hover:text-black transition-colors underline underline-offset-4 font-medium">app.focusnest@gmail.com</a></p>
-      </section>
+    <div class="last-updated">Last Updated: May 07, 2026</div>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">2. Acceptance of Terms</h2>
+    <section>
+        <h2>1. Service Provider</h2>
         <p>
-          By using the App, you agree to these Terms. The App is intended for users aged 13+ (16 in some EU regions). If you do not agree, you must uninstall the App.
+            These Terms are entered into with <strong>Joanna Maleszka</strong>, independent developer based in <strong>Poland</strong> (“Creator”).
         </p>
-      </section>
+        <p>Contact: <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">3. Description of Service</h2>
+    <section>
+        <h2>2. Acceptance of Terms</h2>
         <p>
-          Focus Nest is a productivity application designed to support focus management and time tracking. It does not guarantee productivity results or outcomes.
+            By using the App, you agree to these Terms. The App is intended for users aged 13+ (16 in some EU regions). If you do not agree, you must uninstall the App.
         </p>
-        <p>
-          The App may display advertisements. Some features require a one-time purchase (“Elite”) via Google Play Billing.
-        </p>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">4. License</h2>
+    <section>
+        <h2>3. Description of Service</h2>
         <p>
-          You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal use only.
+            Focus Nest is a productivity application designed to support focus management and time tracking. It does not guarantee productivity results or outcomes.
         </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>You may not reverse engineer, modify, or decompile the App</li>
-          <li>You may not redistribute or resell the App</li>
-          <li>You may not use the App to train AI models</li>
+        <p>
+            The App may display advertisements. Some features require a one-time purchase (“Elite”) via Google Play Billing.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. License</h2>
+        <p>
+            You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal use only.
+        </p>
+        <ul>
+            <li>You may not reverse engineer, modify, or decompile the App</li>
+            <li>You may not redistribute or resell the App</li>
+            <li>You may not use the App to train AI models</li>
         </ul>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">5. Payments and Premium Features</h2>
-        <div className="space-y-3">
-          <p>
+    <section>
+        <h2>5. Payments and Premium Features</h2>
+        <p>
             All purchases are processed by Google Play Billing and are subject to Google Play policies.
-          </p>
-          <ul className="list-disc pl-5 space-y-1">
+        </p>
+        <ul>
             <li><strong>EU Withdrawal:</strong> You agree to immediate digital service delivery and waive withdrawal rights once activation begins.</li>
             <li><strong>Refunds:</strong> Managed exclusively by Google Play.</li>
-          </ul>
-        </div>
-      </section>
+        </ul>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">6. Third-Party Services</h2>
+    <section>
+        <h2>6. Third-Party Services</h2>
         <p>
-          The App uses third-party services which operate under their own privacy policies:
+            The App uses third-party services which operate under their own privacy policies:
         </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>Google AdMob</li>
-          <li>RevenueCat</li>
+        <ul>
+            <li>Google AdMob</li>
+            <li>RevenueCat</li>
         </ul>
         <p>
-          These services may independently collect and process data.
+            These services may independently collect and process data.
         </p>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">7. Service Availability</h2>
+    <section>
+        <h2>7. Service Availability</h2>
         <p>
-          The App is provided “AS IS”. We are not responsible for interruptions caused by: device restrictions, OS updates, or external service failures.
+            The App is provided “AS IS”. We are not responsible for interruptions caused by: device restrictions, OS updates, or external service failures.
         </p>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">8. User Responsibility</h2>
+    <section>
+        <h2>8. User Responsibility</h2>
         <p>
-          Users are responsible for correct device configuration (battery optimization, notifications). The App must not be used while driving or operating machinery.
+            Users are responsible for correct device configuration (battery optimization, notifications). The App must not be used while driving or operating machinery.
         </p>
-      </section>
+    </section>
 
-      <section className="space-y-3 border border-red-100 p-4 rounded-lg bg-red-50/30">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-red-600">9. Health & Safety (Seizure Warning)</h2>
-        <div className="text-red-600 space-y-2">
-          <p>
+    <section class="warning-box">
+        <h2>9. Health & Safety (Seizure Warning)</h2>
+        <p>
             A very small percentage of individuals may experience epileptic seizures when exposed to certain visual patterns, including flashing lights or animations. Even people who have no history of seizures or epilepsy may have an undiagnosed condition.
-          </p>
-          <p>
+        </p>
+        <p>
             <strong>Consult your physician before use</strong> if you have an epileptic condition or have experienced any symptoms related to seizures.
-          </p>
-          <p>
+        </p>
+        <p>
             <strong>Immediately discontinue use</strong> and consult a doctor if you experience: dizziness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or any involuntary movement.
-          </p>
-          <p className="text-[11px] font-bold">
+        </p>
+        <p style="font-weight: bold; font-size: 11px;">
             The Creator is not liable for any health complications arising from the use of the App's visual interface.
-          </p>
-        </div>
-      </section>
+        </p>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">10. Limitation of Liability</h2>
-        <div className="space-y-3">
-          <p>
+    <section>
+        <h2>10. Limitation of Liability</h2>
+        <p>
             To the maximum extent permitted by law, the Creator is not liable for indirect damages, data loss, or device issues.
-          </p>
-          <p>
+        </p>
+        <p>
             Where liability cannot be excluded, it is limited to the amount paid for premium features.
-          </p>
-        </div>
-      </section>
+        </p>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">11. Indemnification</h2>
+    <section>
+        <h2>11. Indemnification</h2>
         <p>
-          You agree to indemnify the Creator against claims arising from misuse of the App.
+            You agree to indemnify the Creator against claims arising from misuse of the App.
         </p>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">12. Termination</h2>
+    <section>
+        <h2>12. Termination</h2>
         <p>
-          We may suspend or discontinue the App at any time in compliance with applicable law. You may stop using it at any time by uninstalling.
+            We may suspend or discontinue the App at any time in compliance with applicable law. You may stop using it at any time by uninstalling.
         </p>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">13. Export Compliance</h2>
+    <section>
+        <h2>13. Export Compliance</h2>
         <p>
-          You confirm that you are not located in a country subject to embargo or sanctions, and are not on any restricted party list.
+            You confirm that you are not located in a country subject to embargo or sanctions, and are not on any restricted party list.
         </p>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">14. Governing Law</h2>
+    <section>
+        <h2>14. Governing Law</h2>
         <p>
-          These Terms are governed by <strong>Polish law</strong>. EU consumers retain mandatory legal protections in their country of residence.
+            These Terms are governed by <strong>Polish law</strong>. EU consumers retain mandatory legal protections in their country of residence.
         </p>
-      </section>
+    </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-zinc-900">15. Contact</h2>
-        <p>Email: <a href="mailto:app.focusnest@gmail.com" className="text-zinc-900 hover:text-black transition-colors underline underline-offset-4 font-medium">app.focusnest@gmail.com</a></p>
-      </section>
+    <section>
+        <h2>15. Contact</h2>
+        <p>Email: <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
+    </section>
 
-      <div className="pt-12 border-t border-zinc-100 mt-16 pb-10">
-        <p className="text-[10px] text-zinc-400 uppercase tracking-[0.4em] text-center leading-loose">
-          Latest version available online at:<br />
-          <a href="https://appfocusnest.github.io/termsofservice/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-zinc-900 transition-colors break-all">appfocusnest.github.io/termsofservice/</a>
+    <div class="footer">
+        <p>
+            Latest version available online at:<br>
+            <a href="https://appfocusnest.github.io/termsofservice/">appfocusnest.github.io/termsofservice/</a>
         </p>
-      </div>
     </div>
-  );
-}
+
+</body>
+</html>
