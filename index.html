@@ -8,7 +8,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #18181b;
+            color: #27272a;
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
@@ -28,20 +28,13 @@
             font-weight: bold;
             letter-spacing: 0.4em;
             text-transform: uppercase;
+            color: #18181b;
             margin-top: 32px;
             margin-bottom: 12px;
         }
         p {
             margin-bottom: 16px;
-            font-size: 14px;
-        }
-        ul {
-            margin-bottom: 16px;
-            padding-left: 20px;
-            font-size: 14px;
-        }
-        li {
-            margin-bottom: 4px;
+            text-align: justify;
         }
         .last-updated {
             font-size: 10px;
@@ -50,33 +43,33 @@
             letter-spacing: 0.3em;
             margin-bottom: 48px;
         }
+        ul {
+            margin-bottom: 16px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
         a {
             color: #18181b;
             text-decoration: underline;
             text-underline-offset: 4px;
             font-weight: 500;
         }
-        .warning-box {
+        .highlight-section {
             border: 1px solid #fee2e2;
             background-color: rgba(254, 242, 242, 0.3);
             padding: 16px;
             border-radius: 8px;
-            margin: 24px 0;
         }
-        .warning-box h2 {
+        .highlight-section h2 {
             color: #7f1d1d;
             margin-top: 0;
         }
-        .footer {
-            margin-top: 64px;
-            padding-top: 48px;
+        .footer-link {
             border-top: 1px solid #f4f4f5;
-            text-align: center;
-            font-size: 10px;
-            color: #a1a1aa;
-            text-transform: uppercase;
-            letter-spacing: 0.4em;
-            line-height: 2;
+            padding-top: 24px;
+            margin-top: 24px;
         }
     </style>
 </head>
@@ -84,7 +77,7 @@
 
     <h1>TERMS OF SERVICE – Focus Nest</h1>
     
-    <div class="last-updated">Last Updated: 7 May 2026</div>
+    <p class="last-updated">Last Updated: 7 May 2026</p>
 
     <section>
         <h2>1. Service Provider</h2>
@@ -166,8 +159,13 @@
             <li>supporting platform infrastructure (e.g. Google Play) remains available</li>
             <li>the App remains technically and commercially viable</li>
         </ul>
-        <p>It does not guarantee indefinite availability of the App, future compatibility with all devices, ongoing feature development, or feature parity across future versions.</p>
-        
+        <p>It does not guarantee:</p>
+        <ul>
+            <li>indefinite availability of the App</li>
+            <li>future compatibility with all devices or operating systems</li>
+            <li>ongoing feature development</li>
+            <li>feature parity across future versions</li>
+        </ul>
         <p><strong>6.2 Scope of Purchase</strong></p>
         <p>Purchases apply only to features explicitly described at the time of purchase. Future features or major updates may be offered separately.</p>
     </section>
@@ -181,77 +179,147 @@
             <li>store financial information</li>
             <li>issue refunds directly</li>
         </ul>
-        <p>Refunds are handled by Google Play according to their policies. EU users acknowledge that they may lose the right of withdrawal once activation begins for digital content.</p>
+        <p>Refunds are handled by Google Play according to their policies.</p>
+        <p>EU users acknowledge that, where applicable, they consent to immediate provision of digital content and may lose the right of withdrawal once activation begins, in accordance with Directive 2011/83/EU.</p>
     </section>
 
     <section>
         <h2>8. EU Consumer Rights</h2>
         <p>If you are a consumer in the European Union, you have statutory rights under applicable consumer protection laws, including Directive (EU) 2019/770 on digital content.</p>
+        <p>These may include remedies such as:</p>
+        <ul>
+            <li>repair or restoration of conformity</li>
+            <li>price reduction</li>
+            <li>termination of contract in case of material non-conformity</li>
+        </ul>
         <p>Nothing in these Terms limits rights that cannot be legally excluded.</p>
     </section>
 
     <section>
         <h2>9. Complaints</h2>
         <p>You may submit complaints to: 📧 <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
-        <p>A valid complaint should include a description of the issue, device model, and proof of purchase (if applicable). We aim to respond within 14 days.</p>
+        <p>A valid complaint should include:</p>
+        <ul>
+            <li>description of the issue</li>
+            <li>device model and Android version</li>
+            <li>proof of purchase (if applicable)</li>
+        </ul>
+        <p>We aim to respond within 14 days, unless a longer period is required by law.</p>
     </section>
 
     <section>
         <h2>10. Third-Party Services</h2>
-        <p>The App uses third-party services, including Google AdMob, RevenueCat, and Google Play Services. These providers operate under their own terms and privacy policies.</p>
+        <p>The App uses third-party services, including:</p>
+        <ul>
+            <li>Google AdMob</li>
+            <li>RevenueCat</li>
+            <li>Google Play Services</li>
+        </ul>
+        <p>These providers operate under their own terms and privacy policies and may act as independent data controllers.</p>
+        <p>We are not responsible for:</p>
+        <ul>
+            <li>their data processing practices</li>
+            <li>service interruptions</li>
+            <li>content served via advertising</li>
+            <li>security incidents outside our systems</li>
+        </ul>
     </section>
 
     <section>
         <h2>11. Privacy and Data</h2>
-        <p>We do not store user data on our servers. Some data may be processed by third parties as described in the Privacy Policy:</p>
-        <p><a href="https://appfocusnest.github.io/privacy/" target="_blank">https://appfocusnest.github.io/privacy/</a></p>
+        <p>We do not store user data on our servers.</p>
+        <p>Some data may be processed by third parties as described in the Privacy Policy:</p>
+        <p><a href="https://appfocusnest.github.io/privacy/" target="_blank" rel="noopener noreferrer">https://appfocusnest.github.io/privacy/</a></p>
+        <p>By using the App, you acknowledge such processing.</p>
     </section>
 
     <section>
         <h2>12. Availability and Changes</h2>
-        <p>The App is provided “AS IS” and “AS AVAILABLE”. We may modify, suspend, or discontinue the App at any time for legal, technical, or business reasons.</p>
+        <p>The App is provided “AS IS” and “AS AVAILABLE”.</p>
+        <p>We do not guarantee:</p>
+        <ul>
+            <li>uninterrupted operation</li>
+            <li>error-free performance</li>
+            <li>long-term availability</li>
+        </ul>
+        <p>We may modify, suspend, or discontinue the App at any time for legal, technical, or business reasons.</p>
+        <p>Where possible, we aim not to remove access to already purchased features while the App remains operational.</p>
     </section>
 
-    <section class="warning-box">
+    <section class="highlight-section">
         <h2>13. Health and Safety</h2>
-        <p>The App may include visual animations, notifications, vibration, or full-screen elements. If you have a history of photosensitive epilepsy, consult a medical professional before use.</p>
-        <p>The App must not be used while driving, operating machinery, or performing activities requiring full attention.</p>
+        <p>The App may include visual animations, notifications, vibration, or full-screen elements.</p>
+        <p>A small percentage of individuals may experience discomfort, dizziness, or seizures when exposed to certain visual stimuli. If you have a history of photosensitive epilepsy or neurological conditions, consult a medical professional before use.</p>
+        <p>Immediately discontinue use and seek medical advice if you experience symptoms such as dizziness, altered vision, involuntary movements, or disorientation.</p>
+        <p>The App is not a medical device and does not provide medical advice. To the maximum extent permitted by law, the Creator is not liable for health-related issues arising from improper or unsafe use.</p>
+        <p>The App must not be used while driving, operating machinery, or performing activities requiring full attention and situational awareness.</p>
     </section>
 
     <section>
         <h2>14. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, we are not liable for indirect damages, loss of data, or productivity loss. Total liability shall not exceed the amount paid for premium features.</p>
+        <p>To the maximum extent permitted by law, we are not liable for:</p>
+        <ul>
+            <li>indirect or consequential damages</li>
+            <li>loss of data</li>
+            <li>loss of profits or productivity</li>
+            <li>device or system issues</li>
+            <li>third-party service failures</li>
+        </ul>
+        <p>Total liability shall not exceed the amount paid for premium features.</p>
+        <p>Nothing in these Terms excludes liability that cannot be excluded under applicable law.</p>
     </section>
 
     <section>
         <h2>15. Force Majeure</h2>
-        <p>We are not responsible for delays caused by events beyond reasonable control, such as platform outages or natural disasters.</p>
+        <p>We are not responsible for delays or failures caused by events beyond reasonable control, including:</p>
+        <ul>
+            <li>outages of internet or platforms</li>
+            <li>governmental actions</li>
+            <li>natural disasters</li>
+            <li>cyberattacks</li>
+            <li>third-party service failures</li>
+        </ul>
     </section>
 
     <section>
         <h2>16. Termination</h2>
-        <p>You may stop using the App at any time by uninstalling it. We may suspend access if required by law or technical necessity.</p>
+        <p>You may stop using the App at any time by uninstalling it.</p>
+        <p>We may suspend or discontinue access if required by:</p>
+        <ul>
+            <li>law</li>
+            <li>platform requirements</li>
+            <li>technical necessity</li>
+            <li>business reasons</li>
+        </ul>
+        <p>Certain provisions (including IP, liability, and legal protections) survive termination.</p>
     </section>
 
     <section>
         <h2>17. Intellectual Property</h2>
-        <p>All rights to the App and its content remain with the Developer. Unauthorized use is prohibited.</p>
+        <p>All rights to the App and its content remain with the Developer.</p>
+        <p>Unauthorized use is prohibited.</p>
     </section>
 
     <section>
         <h2>18. Export Compliance</h2>
-        <p>You confirm that you are not located in a restricted jurisdiction and are not on any prohibited list.</p>
+        <p>You confirm that you are not located in a restricted or sanctioned jurisdiction and are not on any prohibited list.</p>
     </section>
 
     <section>
         <h2>19. Governing Law</h2>
-        <p>These Terms are governed by the laws of Poland. Disputes shall be handled by competent courts in Poland.</p>
-        <p>EU ODR platform: <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a></p>
+        <p>These Terms are governed by the laws of Poland.</p>
+        <p>EU consumers retain mandatory rights under their local consumer protection laws.</p>
+        <p>Disputes shall be handled by competent courts in Poland, subject to mandatory consumer jurisdiction rules.</p>
+        <p>EU ODR platform: <br>
+            <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>
+        </p>
     </section>
 
     <section>
         <h2>20. Changes to Terms</h2>
-        <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance.</p>
+        <p>We may update these Terms from time to time.</p>
+        <p>Continued use of the App after changes are published constitutes acceptance.</p>
+        <p>Changes do not retroactively affect already acquired statutory rights.</p>
     </section>
 
     <section>
@@ -264,10 +332,13 @@
         <p>📧 <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
     </section>
 
-    <div class="footer">
-        Latest version available at:<br>
-        <a href="https://appfocusnest.github.io/termsofservice/" target="_blank">appfocusnest.github.io/termsofservice/</a>
-    </div>
+    <section class="footer-link">
+        <h2>23. Latest Version</h2>
+        <p>The latest version of these Terms is available at:</p>
+        <p>
+            <a href="https://appfocusnest.github.io/termsofservice/" target="_blank" rel="noopener noreferrer">Focus Nest Terms of Service</a>
+        </p>
+    </section>
 
 </body>
 </html>
