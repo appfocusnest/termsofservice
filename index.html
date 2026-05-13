@@ -8,70 +8,75 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #1a1a1a;
+            color: #27272a;
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
             background-color: #ffffff;
-            text-align: justify;
         }
         h1 {
             text-transform: uppercase;
             letter-spacing: 0.2em;
             font-weight: 300;
-            font-size: 24px;
             border-bottom: 1px solid #f4f4f5;
-            padding-bottom: 20px;
+            padding-bottom: 24px;
             margin-bottom: 40px;
-            text-align: left;
+            font-size: 24px;
+            color: #18181b;
         }
         h2 {
             text-transform: uppercase;
-            letter-spacing: 0.3em;
-            font-size: 13px;
+            letter-spacing: 0.4em;
             font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            text-align: left;
+            font-size: 12px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #18181b;
         }
-        p, li {
+        p {
+            margin-bottom: 16px;
             font-size: 14px;
-            margin-bottom: 10px;
+            text-align: justify;
         }
         .last-updated {
             font-size: 10px;
+            color: #a1a1aa;
             text-transform: uppercase;
             letter-spacing: 0.3em;
-            color: #71717a;
-            margin-bottom: 50px;
-            text-align: left;
+            margin-bottom: 48px;
         }
         ul {
+            margin-bottom: 16px;
             padding-left: 20px;
-            margin-bottom: 20px;
-            text-align: left;
+        }
+        li {
+            font-size: 14px;
+            margin-bottom: 4px;
         }
         a {
-            color: #000000;
+            color: #18181b;
             text-decoration: underline;
             text-underline-offset: 4px;
             font-weight: 500;
         }
+        section {
+            margin-bottom: 32px;
+        }
+        .font-bold {
+            font-weight: 700;
+        }
+        .border-t {
+            border-top: 1px solid #f4f4f5;
+            padding-top: 24px;
+        }
         .health-safety {
             border: 1px solid #fee2e2;
             background-color: #fef2f2;
-            padding: 20px;
+            padding: 16px;
             border-radius: 8px;
-            margin: 30px 0;
         }
         .health-safety h2 {
             color: #7f1d1d;
-            margin-top: 0;
-        }
-        .footer-section {
-            border-top: 1px solid #f4f4f5;
-            padding-top: 30px;
-            margin-top: 50px;
         }
     </style>
 </head>
@@ -79,7 +84,7 @@
 
     <h1>TERMS OF SERVICE – Focus Nest</h1>
     
-    <p class="last-updated">Last Updated: 12 May 2026</p>
+    <div class="last-updated">Last Updated: 13 May 2026</div>
 
     <section>
         <h2>1. Service Provider</h2>
@@ -154,22 +159,26 @@
     <section>
         <h2>6. Premium Features (“Elite”)</h2>
         <p>The App may offer optional paid features via a one-time purchase.</p>
-        <p><strong>6.1 Definition of “Lifetime Access”</strong></p>
-        <p>“Lifetime access” refers to access for as long as:</p>
-        <ul>
-            <li>the App is maintained and distributed by the Developer</li>
-            <li>supporting platform infrastructure (e.g. Google Play) remains available</li>
-            <li>the App remains technically and commercially viable</li>
-        </ul>
-        <p>It does not guarantee:</p>
-        <ul>
-            <li>indefinite availability of the App</li>
-            <li>future compatibility with all devices or operating systems</li>
-            <li>ongoing feature development</li>
-            <li>feature parity across future versions</li>
-        </ul>
-        <p><strong>6.2 Scope of Purchase</strong></p>
-        <p>Purchases apply only to features explicitly described at the time of purchase. Future features or major updates may be offered separately.</p>
+        <div style="margin-top: 16px;">
+            <p class="font-bold">6.1 Definition of “Lifetime Access”</p>
+            <p>“Lifetime access” refers to access for as long as:</p>
+            <ul>
+                <li>the App is maintained and distributed by the Developer</li>
+                <li>supporting platform infrastructure (e.g. Google Play) remains available</li>
+                <li>the App remains technically and commercially viable</li>
+            </ul>
+            <p>It does not guarantee:</p>
+            <ul>
+                <li>indefinite availability of the App</li>
+                <li>future compatibility with all devices or operating systems</li>
+                <li>ongoing feature development</li>
+                <li>feature parity across future versions</li>
+            </ul>
+        </div>
+        <div style="margin-top: 16px;">
+            <p class="font-bold">6.2 Scope of Purchase</p>
+            <p>Purchases apply only to features explicitly described at the time of purchase. Future features or major updates may be offered separately.</p>
+        </div>
     </section>
 
     <section>
@@ -231,7 +240,7 @@
         <h2>11. Privacy and Data</h2>
         <p>We do not store user data on our servers.</p>
         <p>Some data may be processed by third parties as described in the Privacy Policy:</p>
-        <p><a href="https://appfocusnest.github.io/privacy/" target="_blank">https://appfocusnest.github.io/privacy/</a></p>
+        <p><a href="https://appfocusnest.github.io/privacy/" target="_blank" rel="noopener noreferrer">https://appfocusnest.github.io/privacy/</a></p>
         <p>By using the App, you acknowledge such processing.</p>
     </section>
 
@@ -249,7 +258,7 @@
     </section>
 
     <section class="health-safety">
-        <h2>13. Health and Safety</h2>
+        <h2 style="margin-top: 0;">13. Health and Safety</h2>
         <p>The App may include visual animations, notifications, vibration, or full-screen elements.</p>
         <p>A small percentage of individuals may experience discomfort, dizziness, or seizures when exposed to certain visual stimuli. If you have a history of photosensitive epilepsy or neurological conditions, consult a medical professional before use.</p>
         <p>Immediately discontinue use and seek medical advice if you experience symptoms such as dizziness, altered vision, involuntary movements, or disorientation.</p>
@@ -313,7 +322,7 @@
         <p>EU consumers retain mandatory rights under their local consumer protection laws.</p>
         <p>Disputes shall be handled by competent courts in Poland, subject to mandatory consumer jurisdiction rules.</p>
         <p>EU ODR platform: <br>
-            <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a>
+            <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" style="font-size: 12px;">https://ec.europa.eu/consumers/odr</a>
         </p>
     </section>
 
@@ -334,11 +343,11 @@
         <p>📧 <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
     </section>
 
-    <section class="footer-section">
+    <section class="border-t">
         <h2>23. Latest Version</h2>
         <p>The latest version of these Terms is available at:</p>
         <p>
-            <a href="https://appfocusnest.github.io/termsofservice/" target="_blank">Focus Nest Terms of Service</a>
+            <a href="https://appfocusnest.github.io/termsofservice/" target="_blank" rel="noopener noreferrer">Focus Nest Terms of Service</a>
         </p>
     </section>
 
